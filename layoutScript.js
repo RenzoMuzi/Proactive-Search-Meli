@@ -1,4 +1,4 @@
-document.getElementById("bBusqueda").addEventListener("click", function (){ pagination(getInputs(), getItems) });
+(function(){ document.getElementById("bBusqueda").addEventListener("click", function (){ pagination(getInputs(), getItems) });
 
 function getInputs(){
     var urlReq = 'https://api.mercadolibre.com/sites/MLU/search?q=iphone';
@@ -80,7 +80,5 @@ function pagination (urlCall, getItems){
     };
     xhttp.send();
 }
-
-
- 
+})(); 
 
